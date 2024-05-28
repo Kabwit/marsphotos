@@ -17,14 +17,14 @@
 package com.example.marsphotos.model
 
 import kotlinx.serialization.SerialName
-import kotlinx.serialization.Serializable
+
 
 /**
  * This data class defines a Mars photo which includes an ID, and the image URL.
  */
+import kotlinx.serialization.Serializable
+
 @Serializable
 data class MarsPhoto(
-    val id: String,
-    @SerialName(value = "img_src")
-    val imgSrc: String
+    val id: String,  val img_src: String
 )
